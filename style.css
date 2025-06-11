@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background: #0a0a0a;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero {
+  background: linear-gradient(160deg, #0a0a0a, #1f1f1f);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.hero .x {
+  opacity: 0.5;
+  padding: 0 0.5rem;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 1rem;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.8;
+}
+
+.profiles .card {
+  background: #1a1a1a;
+  border-radius: 16px;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 320px;
+  transition: transform 0.3s ease;
+}
+
+.profiles .card img {
+  width: 80px;
+  margin-bottom: 12px;
+}
+
+.services {
+  background: #121212;
+}
+
+.services h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.merge-logo {
+  padding: 80px 0;
+  background: radial-gradient(circle, #222, #000);
+}
+
+.merge-logo .logo-merge {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  opacity: 0.7;
+}
+
+.contact-block {
+  margin-bottom: 40px;
+}
+
+.contact h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #ccc;
+}
