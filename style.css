@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: 'Helvetica Neue', sans-serif;
-  background: #0a0a0a;
-  color: #fff;
+  background: #000;
+  color: #eee;
   overflow-x: hidden;
 }
 
@@ -11,8 +11,18 @@ section {
   text-align: center;
 }
 
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #b61924;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
 .hero {
-  background: linear-gradient(160deg, #0a0a0a, #1f1f1f);
+  background: linear-gradient(160deg, #000, #222);
   height: 100vh;
   display: flex;
   align-items: center;
@@ -20,13 +30,9 @@ section {
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   letter-spacing: 2px;
-}
-
-.hero .x {
-  opacity: 0.5;
-  padding: 0 0.5rem;
+  color: #fff;
 }
 
 .hero p {
@@ -35,29 +41,33 @@ section {
   max-width: 300px;
   margin-left: auto;
   margin-right: auto;
-  opacity: 0.8;
+  color: #aaa;
 }
 
 .profiles .card {
-  background: #1a1a1a;
+  background: #111;
   border-radius: 16px;
   margin: 20px auto;
   padding: 20px;
   max-width: 320px;
-  transition: transform 0.3s ease;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
+  color: #f1f1f1;
+  border: 1px solid #333;
 }
 
 .profiles .card img {
   width: 80px;
   margin-bottom: 12px;
+  filter: grayscale(100%);
 }
 
 .services {
-  background: #121212;
+  background: #111;
+  color: #ccc;
 }
 
 .services h3 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-bottom: 20px;
 }
 
@@ -68,19 +78,39 @@ section {
 
 .services li {
   margin: 10px 0;
-  font-size: 1.1rem;
-  opacity: 0.9;
+  font-size: 1.05rem;
+  color: #bbb;
 }
 
-.merge-logo {
-  padding: 80px 0;
-  background: radial-gradient(circle, #222, #000);
+.logo-merge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 20px;
 }
 
-.merge-logo .logo-merge {
-  font-size: 2rem;
-  letter-spacing: 2px;
-  opacity: 0.7;
+.hero-logo {
+  width: 80px;
+  height: auto;
+  filter: grayscale(100%);
+}
+
+.hero .x {
+  font-size: 1.5rem;
+  color: #aaa;
+  opacity: 0.6;
+}
+
+.contact {
+  background: #000;
+  padding-bottom: 60px;
+}
+
+.contact h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 30px;
 }
 
 .contact-block {
@@ -91,4 +121,21 @@ section {
   margin-bottom: 10px;
   font-size: 1.2rem;
   color: #ccc;
+}
+
+.contact-link {
+  display: inline-block;
+  margin: 5px 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.95rem;
+  border: 1px solid #444;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+  background: #fff;
+  color: #000;
 }
