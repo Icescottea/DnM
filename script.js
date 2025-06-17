@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
 // Animate hero
-gsap.from(".hero-content h1", {
+gsap.from(".hero-content", {
   y: 50,
   opacity: 0,
   duration: 1,
@@ -31,7 +31,7 @@ gsap.from(".card", {
 // Merge logo pulse on scroll
 gsap.from(".logo-merge", {
   scrollTrigger: {
-    trigger: ".merge-logo",
+    trigger: ".hero-logo",
     start: "top 90%"
   },
   scale: 0.8,
